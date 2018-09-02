@@ -21,7 +21,7 @@ module.exports = function validateLoginInput(data) {
         errors.password = "Password field is required";
     }
 
-    if (!Validator.isLength(data.passowrd, {min: 6, max: 30})) {
+    if (!Validator.isLength(data.password, {min: 6, max: 30})) {
         errors.password = "Name must be at least 6chars";
     }
 
